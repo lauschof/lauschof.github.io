@@ -1,0 +1,22 @@
+/* Base HTML Styles */
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap");
+:root {
+    --brand: #415A77;
+    --action:#778DA9;
+    --white: #F0F1EC;
+    --base-light: #E0E1DD;
+    --base-dark: #1B263B;
+    --black: #111111;
+}
+
+/* CSS Reset */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Lato", Roboto;
+    color: var(--brand);
+    scroll-behavior: smooth;
+}
+
+
