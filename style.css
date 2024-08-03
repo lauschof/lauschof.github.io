@@ -95,7 +95,7 @@ select {
 
 .header-logo {
     height: auto;
-    width: 100%;
+    width: 100px;
 }
 header {
     display: flex;
@@ -104,6 +104,7 @@ header {
     padding: 0px 10%;
     background-color: var(--white);
     list-style: none;
+    flex-direction: column;
 }
 
 .nav_links {
@@ -135,12 +136,12 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: row;
     }
 }
 
 @media (min-width: 768px) {
     .header-logo {
-        height: auto;
         width: 100px;
     }
 }
@@ -148,7 +149,7 @@ header {
 
 /*  .hero */
 .hero {
-    background-color:var(--action);
+    background-color:var(--baselight);
     padding: 56px 16px; */
     border-radius: 5px;
     margin: 5px 10px;
@@ -164,9 +165,35 @@ header {
     color: var(--base-light);
 }
 
+@media (min-width: 768px) {
+    .hero {
+        padding: 0;
+    }
+}
 
-/* BIO */
 
+/* About ME */
+
+.about-me {
+    background-color:var(--white);
+    padding: 56px 16px; */
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+.about-me article {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+.profile-pic {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
 
 /* .contact-form */
 .contact-form {
@@ -196,10 +223,12 @@ header {
 .contact-form h3 {
     color: var(--black);
     margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
 }
 
 .contact-form input[type="submit"] {
-    background-color: var(--action);
+    background-color: var(--baselight);
     border 0;
     margin-top: 8px;
     cursor: pointer;
