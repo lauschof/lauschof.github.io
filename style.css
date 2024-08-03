@@ -57,7 +57,7 @@ ul {
 img {
     width: 100%;
     height: auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 input,
@@ -101,7 +101,9 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 0px 10%;
+    padding: 48px 16px;
+    margin: 5px 10px;
+    border-radius: 10px;
     background-color: var(--white);
     list-style: none;
     flex-direction: column;
@@ -149,8 +151,8 @@ header {
 
 /*  .hero */
 .hero {
-    background-color:var(--baselight);
-    padding: 56px 16px; */
+    background-color:var(--base-light);
+    padding: 56px 16px;
     border-radius: 5px;
     margin: 5px 10px;
 }
@@ -174,32 +176,49 @@ header {
 
 /* About ME */
 
-.about-me {
-    background-color:var(--white);
-    padding: 56px 16px; */
-    border-radius: 5px;
-    margin: 5px 0px;
-}
-
-.about-me article {
+.container {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: var(--base-light);
+    padding: 48px 16px;
+    border-radius: 5px;
+    margin: 5px 10px;
+    min-height: auto;
 }
 
+.box {
+    padding: 20px;
+}
 
+.box h2 {
+    
+}
+
+.box p {
+    width: fit-content;
+    padding: 10px;
+}
 
 .profile-pic {
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    border: 1px solid --white;
+    border-radius: 50%;
     padding: 5px;
     width: 150px;
+    margin: 1rem auto;
+    /* border: 2px solid red; */
 }
 
 /* .contact-form */
 .contact-form {
+    display: flex;
+    flex-flow: column;
     padding: 48px 16px;
     border-radius: 10px;
     margin: 5px 10px;
+    background-color: var(--base-light);
 }
 
 .contact-form input,
@@ -229,14 +248,18 @@ header {
 
 .contact-form input[type="submit"] {
     background-color: var(--baselight);
-    border 0;
+    border: 0;
+    font-size: larger;
     margin-top: 8px;
     cursor: pointer;
 }
 
 /* Footer */
 footer {
-    padding: 16px;
+    padding: 48px 16px;
+    margin: 5px 10px;
+    border-radius: 10px;
+    text-align: center;
     text-align: center;
     background-color:var(--white);
 }
@@ -244,4 +267,8 @@ footer {
 .socials-icon {
     width: 40px;
     height: 40px;
+}
+
+footer p {
+    margin: 25px;
 }
