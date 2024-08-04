@@ -1,0 +1,378 @@
+/* Base HTML Styles */
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap");
+:root {
+    --brand: #2E3A46;
+    --brand-alt: #526272;
+    --action: #A3B4C4;
+    --action-alt: #D0D8DF;
+    --base-light: #F0F1EC;
+    --base: #FFFFFF;
+}
+
+/* CSS Reset */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Lato", Roboto;
+    color: var(--brand);
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+    color: var(--brand);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    color: var(--brand);
+    line-height: 1.5;
+    text-wrap: pretty;
+}
+
+ol,
+li,
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    /* border: 2px solid red; */
+}
+
+input,
+button,
+textarea,
+select {
+    font-family: "Roboto";
+}
+
+header, footer {
+    background-color: var(--brand-alt);
+    color: var(--base);
+}
+
+a {
+    color: var(--action);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--action-alt);
+}
+
+button {
+    background-color: var(--action);
+    color: var(--base);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--action-alt);
+}
+
+.section {
+    background-color: var(--base);
+    color: var(--brand-alt);
+}
+
+.section-alt {
+    background-color: var(--base-light);
+    color: var(--brand);
+}
+
+/* Utilities */
+
+.display-none {
+    display:none;
+}
+
+/* Components */
+
+ /* btn-primary */
+ .btn-primary {
+    padding: 12px 16px;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--black);
+    border-radius: 4px;
+    background-color: var(--action);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+}
+
+/* NEW HEADERRR */
+
+.header-logo {
+    height: auto;
+    width: 100px;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 48px 16px;
+    margin: 5px 10px;
+    border-radius: 10px;
+    background-color: var(--base-light);
+    list-style: none;
+    flex-direction: column;
+}
+
+.nav_links {
+    list-style: none;
+    color: var(--brand-alt);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.nav_links li {
+   display: inline-block;
+   padding: 0px 20px;
+}
+
+.nav_links a {
+    text-decoration: none;
+    color: var(--brand);
+    font-size: 25px;
+}
+
+.nav_links li a:hover {
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-logo {
+        width: 100px;
+    }
+}
+
+
+/*  .hero */
+.hero {
+    background-color:var(--white);
+    padding: 48px 16px;
+    border-radius: 5px;
+    margin: 5px 10px;
+    text-align: center;
+    min-height: auto;
+}
+
+.les {
+    display: flex;
+    text-align: center;
+    margin: 5px 10px;
+}
+
+.les h1, p {
+    flex-direction: row;
+}
+
+.hero h1 {
+    margin-bottom: 24px;
+    color: var(--brand)
+    
+}
+
+.hero .hero-accent {
+    color: var(--base-light);
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding: 0;
+    }
+}
+
+
+/* About ME */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: var(--base-light);
+    padding: 48px 16px;
+    border-radius: 5px;
+    margin: 5px 10px;
+    min-height: auto;
+}
+
+.box {
+    padding: 20px;
+}
+
+.box h2 {
+    
+}
+
+.box p {
+    width: fit-content;
+    padding: 10px;
+}
+
+.profile-pic {
+    border: 1px solid --white;
+    border-radius: 50%;
+    padding: 5px;
+    width: 150px;
+    margin: 1rem auto;
+    /* border: 2px solid red; */
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        /* text-wrap: nowrap; */
+    }
+    .box {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        /* text-wrap: nowrap; */
+    }
+}
+
+/* .contact-form */
+.contact-form {
+    display: flex;
+    flex-flow: column;
+    padding: 48px 16px;
+    border-radius: 10px;
+    margin: 5px 10px;
+    background-color: var(--white);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contact-form input,
+.contact-form select {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 8px;
+}
+
+.contact-form label {
+    display: block;
+    width: 100%;
+}
+
+.contact-form h3 {
+    color: var(--black);
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form button {
+    margin: 25px 25px;
+    width: auto; 
+    text-align: center;
+    align-self: center;
+    font-weight: bolder;
+}
+
+.contact-form input[type="button"] {
+    background-color: var(--baselight);
+    border: 0;
+    font-size: larger;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+   .contact-form h3 {
+       text-align: center;
+       font-size: 1.5rem;
+   }
+ 
+   .contact-form form {
+       max-width: auto;
+       margin: auto;
+   }
+ }
+
+
+
+/* Footer */
+footer {
+    padding: 48px 16px;
+    margin: 5px 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-align: center;
+    background-color:var(--base-light);
+}
+
+.socials-icon {
+    width: 40px;
+    height: 40px;
+}
+
+footer p {
+    margin: 25px;
+}
+
+@media (min-width: 768px) {
+    .body
+    margin: 50px 10 px;
+}
