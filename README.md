@@ -5,7 +5,7 @@ lauschof.github.io
 ## Project Requirements
 
 ### Content
- Add a short paragraph describing the features below. What aesthetic and technical choices did you make? 
+ I added a little introduction to the project and gave it a little name (haha). On the main page I also added my profile with my picture and a contact form. "Projects" website is just empty atm and I'll work on it on my own. "Contact" links straight to the contact form on the main page. I also added my personal links to the footer. 
 - [ ] At least one profile picture
 - [ ] Biography (at least 100 words)
 - [ ] Functional Contact Form
@@ -13,7 +13,7 @@ lauschof.github.io
 - [ ] Links to external sites, e.g. GitHub and LinkedIn.
 ​
 ### Technical
- Add a short paragraph describing the features below. What strategies or design decisions did you work from? 
+ I think I have managed to include every techinal aspect.. Struggled with my @media queries, for some reason I didnt get them to work (mainly because I was unsure what I wanted them to do..)
 - [ ] At least 2 web pages.
 - [ ] Version controlled with Git
 - [ ] Deployed on GitHub pages.
@@ -21,7 +21,8 @@ lauschof.github.io
 - [ ] Uses semantic HTML.
 
 ### Bonus (optional)
- Add a short paragraph describing the features below, if you included any. 
+When hovering on header's nav bar, the links show "bold". On desktop the header's logo switches position.
+
 - [ ] Different styles for active, hover and focus states.
 - [ ] Include JavaScript to add some dynamic elements to your site. (Extra tricky!)
 ​
@@ -29,8 +30,6 @@ lauschof.github.io
 > Please include the following:
 > - The different pages and features of your website on mobile, tablet and desktop screen sizes (multiple screenshots per page and screen size).
 > - The different features of your site, e.g. if you have hover states, take a screenshot that shows that.  
-    - When hovering on header's nav bar, the links show "bold"
-    - When you click 'contact' it links straight to the contact form
 
 > You can do this by saving the images in a folder in your repo, and including them in your readme document with the following Markdown code: 
 
