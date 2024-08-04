@@ -1,12 +1,12 @@
 /* Base HTML Styles */
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap");
 :root {
-    --brand: ##1C2120;
-    --action:#CAD6E7;
-    --white: #F0F1EC;
-    --base-light: #E0E1DD;
-    --base-dark: #1B263B;
-    --black: ##1C2120;
+    --brand: #2E3A46;
+    --brand-alt: #526272;
+    --action: #A3B4C4;
+    --action-alt: #D0D8DF;
+    --base-light: #F0F1EC;
+    --base: #FFFFFF;
 }
 
 /* CSS Reset */
@@ -32,6 +32,7 @@ h4,
 h5,
 h6 {
     font-family: "Roboto", sans-serif;
+    color: var(--brand);
 }
 
 body,
@@ -46,6 +47,9 @@ ol,
 ul {
     margin: 0;
     padding: 0;
+    color: var(--brand);
+    line-height: 1.5;
+    text-wrap: pretty;
 }
 
 ol,
@@ -65,6 +69,42 @@ button,
 textarea,
 select {
     font-family: "Roboto";
+}
+
+header, footer {
+    background-color: var(--brand-alt);
+    color: var(--base);
+}
+
+a {
+    color: var(--action);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--action-alt);
+}
+
+button {
+    background-color: var(--action);
+    color: var(--base);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--action-alt);
+}
+
+.section {
+    background-color: var(--base);
+    color: var(--brand-alt);
+}
+
+.section-alt {
+    background-color: var(--base-light);
+    color: var(--brand);
 }
 
 /* Utilities */
@@ -104,14 +144,14 @@ header {
     padding: 48px 16px;
     margin: 5px 10px;
     border-radius: 10px;
-    background-color: var(--white);
+    background-color: var(--base-light);
     list-style: none;
     flex-direction: column;
 }
 
 .nav_links {
     list-style: none;
-    color: var(--black);
+    color: var(--brand-alt);
     padding: 10px 15px;
     display: flex;
     justify-content: center;
@@ -125,7 +165,7 @@ header {
 
 .nav_links a {
     text-decoration: none;
-    color: var(--black);
+    color: var(--brand);
     font-size: 25px;
 }
 
@@ -151,16 +191,28 @@ header {
 
 /*  .hero */
 .hero {
-    background-color:var(--base-light);
-    padding: 56px 16px;
+    background-color:var(--white);
+    padding: 48px 16px;
     border-radius: 5px;
+    margin: 5px 10px;
+    text-align: center;
+    min-height: auto;
+}
+
+.les {
+    display: flex;
+    text-align: center;
     margin: 5px 10px;
 }
 
+.les h1, p {
+    flex-direction: row;
+}
+
 .hero h1 {
-    font-size: 2rem;
     margin-bottom: 24px;
-    color: var(--black)
+    color: var(--brand)
+    
 }
 
 .hero .hero-accent {
@@ -211,6 +263,25 @@ header {
     /* border: 2px solid red; */
 }
 
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        /* text-wrap: nowrap; */
+    }
+    .box {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        /* text-wrap: nowrap; */
+    }
+}
+
 /* .contact-form */
 .contact-form {
     display: flex;
@@ -218,7 +289,13 @@ header {
     padding: 48px 16px;
     border-radius: 10px;
     margin: 5px 10px;
-    background-color: var(--base-light);
+    background-color: var(--white);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .contact-form input,
@@ -246,13 +323,35 @@ header {
     justify-content: center;
 }
 
-.contact-form input[type="submit"] {
+.contact-form button {
+    margin: 25px 25px;
+    width: auto; 
+    text-align: center;
+    align-self: center;
+    font-weight: bolder;
+}
+
+.contact-form input[type="button"] {
     background-color: var(--baselight);
     border: 0;
     font-size: larger;
     margin-top: 8px;
     cursor: pointer;
 }
+
+@media (min-width: 768px) {
+   .contact-form h3 {
+       text-align: center;
+       font-size: 1.5rem;
+   }
+ 
+   .contact-form form {
+       max-width: auto;
+       margin: auto;
+   }
+ }
+
+
 
 /* Footer */
 footer {
@@ -261,7 +360,7 @@ footer {
     border-radius: 10px;
     text-align: center;
     text-align: center;
-    background-color:var(--white);
+    background-color:var(--base-light);
 }
 
 .socials-icon {
@@ -271,4 +370,9 @@ footer {
 
 footer p {
     margin: 25px;
+}
+
+@media (min-width: 768px) {
+    .body
+    margin: 50px 10 px;
 }
