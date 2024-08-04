@@ -1,6 +1,6 @@
-#  your_name_here - Portfolio Task
+#  Laura Schofield - Portfolio Task
 ​
-[My portfolio site](link_to_your_site)
+lauschof.github.io
 ​
 ## Project Requirements
 
