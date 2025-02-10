@@ -1,72 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device=width, initial-scale=1.0">
-    <title>My Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Les Is More - Portfolio of Laura Schofield, Financial Crime Analyst and Tech Enthusiast">
+    <title>Les Is More | Laura Schofield's Portfolio</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 </head>
 
-<body>
-<header>
-    <img src="./img/Les is more logo light.png" alt="Les is more logo" class="header-logo">
-    <nav>
-        <ul class="nav_links">
-            <li><a href="index.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="#contact-link">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+<body>    
+    <header role="banner">
+        <img src="./img/Les is more logo new.png" alt="Les is more logo" class="header-logo">
+        <nav role="navigation" aria-label="Main navigation">
+            <ul class="nav_links">
+                <li><a href="index.html" aria-current="page">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#contact-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section class="hero">
-    <div class="Les">
-    <h1>Welcome to Les Is More</h1>
-    <p> “Less is more”, a philosophy or piece of advice that's often echoed within creative circles. As simplicity and elegance often go hand in hand, this portfolio is dedicated towards this guiding statement. Given that my initials are LES, it felt like a perfect fit! This portfolio will evolve as my skills improve.</p>
+    <main id="main-content">
+        <section class="hero" role="banner">
+            <div class="Les">
+                <h1>Welcome to Les Is More</h1>
+                <p>Less is more”, a philosophy or piece of advice that's often echoed within creative circles. As simplicity and elegance often go hand in hand, this portfolio is dedicated towards this guiding statement. Given that my initials are LES, it felt like a perfect fit! This portfolio will evolve as my skills improve</p>
+            </div>
+        </section>
+
+        <section class="about" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="box">
+                    <h2 id="about-heading">About me</h2>
+                    <p>Hi, I'm Laura! <br> Laura is originally from Finland, but almost 3 years ago she made her dreams come true moving to Perth and trading frostbite for palm trees. As a Financial Crime Analyst in the wagering industry she is  part of a team where every day is different. Working in a rapidly developing industry Laura focuses on learning new skills and staying curious, hence she found herself applying for the SheCodes Plus program. Looking ahead, Laura is excited to combine her current role with the learnings from the program. Her focus is on growing her expertise in hands-on data analysis, with the goal of transforming raw data into meaningful insights that drive business decisions. In her free time she likes to stay active, you can usually find her at the gym or dreaming about getting back on the tennis court once she finishes the She Codes Plus program. </p>
+                    
+                    <!-- Consider adding these sections -->
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <ul class="skills-list">
+                            <li>Financial Crime Analysis</li>
+                            <li>AML</li>
+                            <li>Django</li>
+                            <li>AML</li>
+                            <li>HTML/CSS</li>
+                            <!-- Add more skills as you learn them -->
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="profile-pic-container">
+                    <img 
+                        class="profile-pic" 
+                        src="./img/Profile picture.png" 
+                        alt="Laura Schofield - Financial Crime Analyst and Tech Enthusiast"
+                        loading="lazy"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form" id="contact-link">
+            <h3>Let's chat</h3>
+            <form action="//formspree.io/f/xldrbzev" method="POST">
+                <div class="form-group">
+                    <label for="your-name">Your Name<span aria-label="required">*</span></label>
+                    <input type="text" id="your-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="your-email">Your Email<span aria-label="required">*</span></label>
+                    <input type="email" id="your-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message<span aria-label="required">*</span></label>
+                    <textarea name="message" id="message" rows="10" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+<footer role="contentinfo">
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/laura-schofield-322392128/" title="Connect with Laura Schofield on LinkedIn" target="_blank" rel="noopener noreferrer">
+            <img class="socials-icon" src="./img/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="X" title="Find Laura Schofield on Slack" target="_blank" rel="noopener noreferrer">
+            <img class="socials-icon" src="./img/Slack.png" alt="Slack" />
+        </a>
+        <a href="XX" title="View Laura Schofield's projects on GitHub" target="_blank" rel="noopener noreferrer">
+            <img class="socials-icon" src="./img/github.png" alt="GitHub" />
+        </a>
     </div>
-</section>
-
-<div class="container">
-    <div class="box">
-            <h2>About me</h2>
-            <p> <br>Hi, I'm Laura!<br> I work as a financial crime analyst in the wagering industry, specializing in AML. I'm currently enhancing my tech skills through the SheCodes program, driven by a constant desire to learn and challenge myself. I'm aiming to merge my analytical expertise with new tech skills. </p>
-        </div>
-    <div class="profile-pic">
-            <img class="profile-pic" src="./img/Profile picture.png" alt="Laura profile picture">
-        </div>
-</div>
-
-<section class="contact-form" id="contact-link">
-    <h3>Let's chat</h3>
-    <form action="//formspree.io/f/xldrbzev" method="POST">
-        <label for="your-name">Your Name</label>
-        <input type="text" id="your-name">
-        <label for="your-email">Your Email</label>
-        <input type="email" id="your-email">
-        <label for="message">Your Message</label>
-        <textarea name="message" id="message" rows="10"></textarea>
-        <button type="submit">Send</button>
-    </form>
-</section>
-
-<footer>
-    <a href="" title="Laura Schofield on Linkedin">
-        <img class="socials-icon" src="./img/linkedin.png"
-            alt="The linkedin logo: a rounded blue logo stating IN" />
-    </a>
-    <a href="">
-        <img class="socials-icon" src="./img/Slack.png"
-            alt="The Slack logo: a colourful deconstructed hashtag" />
-    </a>
-    <a href="">
-        <img class="socials-icon" src="./img/github.png"
-            alt="The Github logo: a black circle with the silhouette of a white cat, with one tentacle arm" />
-    </a>
-
-    <p>&copy; 2024 Les Is More by Laura Schofield.</p>
-
+    <p>&copy; <script>document.write(new Date().getFullYear())</script> Les Is More by Laura Schofield.</p>
 </footer>
 
 </body>
